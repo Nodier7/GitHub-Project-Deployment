@@ -394,7 +394,7 @@ nav ul li{
         flex-direction: column;
         height: auto;
         width: auto;
-        overflow-x: hidden;
+        /*overflow-x: hidden;*/
        
     }
 
