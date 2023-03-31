@@ -350,7 +350,7 @@ nav ul li{
 }
 
 form{
-    background-color: #DBD9DC;
+    background-color: lightblue;
     display: flex;
     flex-direction: column; 
     padding: 2vw 4vw;
@@ -377,7 +377,7 @@ form input, form textarea{
 
 form button{
     padding: 15px;
-    background: rgb(4, 18, 219);
+    background-color: #0c3c60;
     color:#DBD9DC;
     font-size: 18px;
     border: 0;
