@@ -9,7 +9,7 @@
     <title>My portfolio</title>
 </head>
 <body>
-    <diV id=" container">
+    <diV id="container">
        <header>
             <div class="flex-Class">
                 <div class="logo">
@@ -140,7 +140,7 @@
                     <div class="gametext">
                        <h3>Guessing Game</h3>
                        <br>
-                       <p>This is a guessing game that automatically generates a random number
+                       <p>This is a guessing game application that automatically generates a random number
                         once loaded and allows the player to take 10 guesses to find the randomly
                         generated number.
                        </p>
@@ -154,9 +154,9 @@
                             will compare each guess to the randomly generated number between 1 to 100.</li>
                            <li>If the guessed number is lower that the randomly generated number, the user will get a message at the bottom that 
                             the guessed number is too low.</li>
-                            <li>If the guessed number is higher than the randomly generated number,
+                           <li>If the guessed number is higher than the randomly generated number,
                               the user will get a message at the bottom saying that the guessed number is too high.</li>
-                            <li>If the user guesses correctly, they will get a message at the bottom confirming that 
+                           <li>If the user guesses correctly, they will get a message at the bottom confirming that 
                               the number is correct and displaying it.</li>
                        </ul>
                        <br>
@@ -174,15 +174,34 @@
                     </div>
                </div> 
 
-
-
            </section>
   
            <section class="contactme" id="contact">
-            
+              <div class="form_container">
+                  <form action="https://formsubmit.co/9f26630cbb1ae0ceb22c390d066b62cb" method="POST">
+                      <!-- Honeypot -->
+                      <input type="text" name="_honey" style="display: none;">
+
+                      <!-- Disable Captcha -->
+                      <input type="hidden"  name="_captcha" value="false">
+                      <!-- Success message page-->
+                      <input type="hidden" name="_next" value="success.html">
+                      <h2>Contact me</h2>
+                      <input type="text" id="name"  name="name" placeholder="Your name" required>
+                      <input type="email" id="email" name="email"    placeholder="Your email" required>
+                      <input type="text" id="phone" name="phone" placeholder="Your phone no.">
+                      <textarea id="message" rows="5" name="message" placeholder="Write your message here"></textarea>
+                      <button type="submit">Send</button>
+                  </form>
+              </div>
            </section>
        </main>
+       <footer>
+
+       </footer>
     </diV>
     <script src="app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 </html>

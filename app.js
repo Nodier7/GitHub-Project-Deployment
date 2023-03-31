@@ -28,4 +28,21 @@ toggleBtn.onclick = function () {
 
         ? 'fa-solid fa-xmark'
         : 'fa-solid fa-bars'
-}         
+}  
+
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "nodi.nzeza@gmail.com",
+        Password : "bekn1407",
+        To : 'nodiernzeza@yahoo.co.uk',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Enquiry",
+        Body : "Name: " + document.getElementById("name").value
+             + "<br> Email: " + document.getElementById("email").value
+             + "<br> Phone no.: " + document.getElementById("phone").value
+             + "<br> Message: " + document.getElementById("message").value
+    }).then(
+      message => alert("Message sent successfully!")
+    );
+}
