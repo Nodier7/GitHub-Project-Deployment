@@ -30,7 +30,7 @@ toggleBtn.onclick = function () {
         : 'fa-solid fa-bars'
 }  
 
-function sendEmail(){
+/*function sendEmail(){
     Email.send({
         Host : "smtp.gmail.com",
         Username : "nodi.nzeza@gmail.com",
@@ -45,4 +45,4 @@ function sendEmail(){
     }).then(
       message => alert("Message sent successfully!")
     );
-}
+}*/

@@ -170,7 +170,7 @@
                       <button type="button" class="linkbtn" id="livebtn" onclick="window.open('https://nodier7.github.io/JS-Project-Deployment/')" target="_blank">
                        Play Game
                       </button>
-                      <button type="button" class="linkbtn"  id="codebtn">Codes</button>
+                      <button type="button" class="linkbtn"  id="codebtn" onclick="window.open('https://github.com/Nodier7/GitHub-Project-Deployment')">Codes</button>
                     </div>
                </div> 
 
@@ -187,29 +187,45 @@
                       <input type="text" name="_honey" style="display: none;">
 
                       <!-- Disable Captcha -->
-                      <input type="hidden"  name="_captcha" value="false">
+                      <in type="hidden"  name="_captcha" value="false">
                       <!-- Success message page-->
                       <input type="hidden" name="_next" value="https://nodier7.github.io/GitHub-Project-Deployment/success.html"> 
                       <h2>Email me</h2>
-                      <input type="text" id="name"  name="name" placeholder="Your name" required>
-                      <input type="email" id="email" name="email"    placeholder="Your email" required>
-                      <input type="text" id="phone" name="phone" placeholder="Your phone no (Optional)">
-                      <textarea id="message" rows="8" name="message" placeholder="Write your message here"></textarea>
+                      <input type="text" id="name"  name="Name" placeholder="Your name" required>
+                      <input type="email" id="email" name="Email"    placeholder="Your email" required>
+                      <input type="text" id="phone" name="Phone" placeholder="Your phone no (Optional)">
+                      <textarea id="message" rows="8" name="Message" placeholder="Write your short message here"></textarea>
+                      <br>
                       <button type="submit">Send</button>
                   </form>
               </div>
            </section>
        </main>
     </diV>
-
+    
     <footer>
       <div class="footnotes">
-         This is a footer
+         <div id="envelope">
+            <a href="mailto:nodiernzeza@eyahoo.co.uk"><i class="fa-solid fa-envelope  fa-3x"></i></a>
+            <p><strong>Email</strong></p>
+         </div>
+         <div id="github">
+            <a href="https://github.com/Nodier7/GitHub-Project-Deployment"><i class="fa-brands fa-github fa-3x"></i></a>
+            <p><strong>Github</strong></p>
+         </div>
+         <div id="linkedin">
+            <i class="fa-brands fa-linkedin fa-3x"></i>
+            <p><strong>LinkedIn</strong></p>
+         </div>
+      
+      </div>
+      
+      <div class="cr">
+        <i class="fa-solid fa-copyright fa-2x"></i>
+        <span>By Nodi N'zeza</span>
       </div>
     </footer>
 
     <script src="app.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
 </body>
 </html>
