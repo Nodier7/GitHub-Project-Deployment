@@ -155,6 +155,9 @@ nav ul li{
     font-size: 2rem;
   
 }
+.greeting p{
+    font-size: 1.30rem;
+}
 
 .slideshow {
 
@@ -191,7 +194,6 @@ nav ul li{
     padding-top: 0px;
     min-height: 500px;
     width: 100%;   
-    font-size: 2rem;
     background-color: #DBD9DC;
 
 
@@ -203,11 +205,12 @@ nav ul li{
     color: rgb(10, 10, 250);
     padding-left: 20px;
     padding-top: 0px;
+    font-size: 3rem;
 }
 
 .aboutme p {
     color: #201924;
-    font-size: 0.75em;
+    font-size: 1.30rem;
     width: 50%;
     padding: 20px;
 
@@ -268,7 +271,7 @@ nav ul li{
     padding-top: 0px;
     min-height: auto;
     width: 100%;   
-    font-size: 1.30rem;
+    font-size: 1.20rem;
 }
 .guessgame_pic{
    
@@ -551,6 +554,38 @@ footer{
         order: 2;
         width: auto;
     }
+    /*
+    .myprojects{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    }   
+    .myproj_heading h1{
+        flex: 1;
+        order: 1;
+        width: auto;
+    }
+    .myprojects .guessgame_pic{
+          flex: 1;
+          order: 2;
+          width: auto;
+    }
+    .myprojects .gametext{
+          flex: 1;
+          order: 3;
+          width: auto;
+    }
+    .myprojects .gametextbtn{
+          flex: 1;
+          order: 4;
+          width: auto;
+    }
+    .myprojects .links{
+         flex: 1;
+         order: 5;
+         width: auto;
+    }*/
 }
 
 @media (max-width: 576) {
@@ -591,8 +626,192 @@ footer{
     .laptop {
         order: 2;
     }
+    /*
+    .myprojects{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }   
+    .myproj_heading h1{
+        flex: 1;
+        order: 1;
+        width: auto;
+    }
+    .guessgame_pic{
+          flex: 1;
+          order: 2;
+          width: auto;
+    }
+    .gametext{
+          flex: 1;
+          order: 3;
+          width: auto;
+    }
+    .gametextbtn{
+          flex: 1;
+          order: 4;
+          width: auto;
+    }
+    .myprojects .links{
+         flex: 1;
+         order: 5;
+         width: auto;
+    }*/
 }
 
+/* For screen widths smaller than 768px */
+@media (max-width: 767px) {
+   
+    .myskills_heading h1, .greeting h1, 
+    .text h1, .contact_heading h1{
+        font-size: 40px;
+    }
+    /* Reduce the font size of the headings */
+    .myproj_heading h1 {
+        font-size: 40px;
+    }
+    .guessgame_pic img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust the layout of the guessing game section */
+    .guessing_game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gametext {
+        margin: 20px;
+    }
+    .gametextbtn {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .textbtn {
+        margin: 5px;
+    }
+    .links {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .linkbtn {
+        margin: 5px;
+    }
+
+    /* Adjust the layout of the Python database section */
+    .python_db {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .app_frame iframe{
+        width: 100%;
+       
+    }
+    .pythondb_text {
+        margin: 20px;
+    }
+    .pydbtextbtn {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pytextbtn {
+        margin: 5px;
+    }
+    .pydblinks {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pylinkbtn {
+        margin: 5px;
+    }
+}
+@media (max-width: 576px){
+    .myskills_heading h1, .greeting h1, 
+    .text h1, .contact_heading h1{
+        font-size: 30px;
+    }
+    /* Reduce the font size of the headings */
+    .myproj_heading h1 {
+        font-size: 30px;
+    }
+    .guessgame_pic img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust the layout of the guessing game section */
+    .guessing_game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gametext {
+        margin: 20px;
+    }
+    .gametextbtn {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .textbtn {
+        margin: 5px;
+    }
+    .links {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .linkbtn {
+        margin: 5px;
+    }
+
+    /* Adjust the layout of the Python database section */
+    .python_db {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .app_frame iframe{
+        width: 100%;
+       
+    }
+    .pythondb_text {
+        margin: 20px;
+    }
+    .pydbtextbtn {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pytextbtn {
+        margin: 5px;
+    }
+    .pydblinks {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pylinkbtn {
+        margin: 5px;
+    }
+
+}
 /*@media screen and (min-width: 768px) {
     .bio {
       display: flex;
