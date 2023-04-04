@@ -282,8 +282,8 @@ nav ul li{
    text-align:center;
 }
 .gametext p{
-    text-align: center;
-
+    text-align: center;    
+   
 }
 .gametextbtn{
     text-align: center;
@@ -317,7 +317,7 @@ nav ul li{
   }
   #jsbtn:hover {
     background-color: #d6d30c;
-    color: #0523a8f1;
+    color: #201924;
     border-style: none;
   }
 .links{
@@ -339,6 +339,82 @@ nav ul li{
     cursor: pointer;
     margin: 4px 2px;
 }
+
+.python_db{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #DBD9DC;
+    margin-top: 20px;
+    font-size: 1.20rem;
+}
+.python_db iframe{
+    padding: 20px 0px 20px 20px;
+    margin-right: 50px;
+    
+
+}
+.pythondb_text h2{
+    text-align:center;
+ }
+ .pythondb_text p{
+     text-align: center;    
+    
+ }
+ .pydbtextbtn{
+     text-align: center;
+ }
+ .pytextbtn {
+     border: none;
+     color:#201924;
+     background-color: cornflowerblue;
+     border: 2px solid blue;
+     border-radius: 5%;
+     padding: 12px 24px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     font-weight: bold;
+     cursor: pointer;
+     margin: 4px 2px;
+     transition-duration: 0.4s;
+    
+   }
+   #pybtn:hover {
+     background-color: #d6d30c;
+     color: #0523a8f1;
+     border-style: none;
+   }
+   #sqlbtn:hover {
+     background-color: black;
+     color: white;
+     border-style: none;
+   }
+   #replbtn:hover {
+     background-color: #1e1a2c;
+     color: green;
+     border-style: none;
+   }
+ .pydblinks{
+     text-align:center;
+ }
+ 
+ .pylinkbtn{
+     text-align: center;
+     background-color:lightblue;
+     width: 25rem;
+     height: 3rem;
+     border-radius:5%;
+     padding: 12px 24px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 20px;
+     font-weight: bold;
+     cursor: pointer;
+     margin: 4px 2px;
+ }
 
 .contact_heading{
     color: blue;
@@ -398,6 +474,8 @@ form button{
     margin: 20px auto 0;
     border-radius: 30px;   
 }
+
+
 
 footer{
     background-color: #DBD9DC;
