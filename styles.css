@@ -739,6 +739,8 @@ footer{
     }
     .linkbtn {
         margin: 5px;
+        width: 12.5rem;
+        height: 3rem;
     }
 
     /* Adjust the layout of the Python database section */
@@ -771,6 +773,8 @@ footer{
     }
     .pylinkbtn {
         margin: 5px;
+        width: 12.5rem;
+        height: 3rem;
     }
 
 }
