@@ -193,7 +193,8 @@ nav ul li{
     justify-content: space-around;
     padding-top: 0px;
     min-height: 500px;
-    width: 100%;   
+    width: 100%; 
+    height: auto;  
     background-color: #DBD9DC;
 
 
@@ -203,16 +204,16 @@ nav ul li{
 .aboutme h1 {
     position: relative;
     color: rgb(10, 10, 250);
-    padding-left: 20px;
+    padding-left: 10px;
     padding-top: 0px;
     font-size: 3rem;
 }
 
-.aboutme p {
+.aboutme .text p {
     color: #201924;
     font-size: 1.30rem;
-    width: 50%;
-    padding: 20px;
+    width: auto;
+    padding: 10px;
 
 }
 
@@ -541,12 +542,15 @@ footer{
         flex-direction: column;
         flex-wrap: wrap;
         height: auto;
+        justify-content: center;
     }
 
-    .aboutme p {
+    .aboutme .text p {
         flex: 1;
         order: 1;
         width: auto;
+        margin: 10px;
+        padding: 5px;
     }
 
     .aboutme .laptop {
@@ -554,115 +558,33 @@ footer{
         order: 2;
         width: auto;
     }
-    /*
-    .myprojects{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: auto;
-    }   
-    .myproj_heading h1{
-        flex: 1;
-        order: 1;
-        width: auto;
-    }
-    .myprojects .guessgame_pic{
-          flex: 1;
-          order: 2;
-          width: auto;
-    }
-    .myprojects .gametext{
-          flex: 1;
-          order: 3;
-          width: auto;
-    }
-    .myprojects .gametextbtn{
-          flex: 1;
-          order: 4;
-          width: auto;
-    }
-    .myprojects .links{
-         flex: 1;
-         order: 5;
-         width: auto;
-    }*/
-}
-
-@media (max-width: 576) {
-    .dropdown_mewnu {
-        left: 2rem;
-        width: unset;
-
-    }
-
-    .bio {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .slideshow {
-        order: 2;
-    }
-
-    .greeting {
-        order: 1;
-    }
-
-    .aboutme {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: auto;
-        /*overflow-x: hidden;*/
-       
-    }
-
-    .text {
-        order: 1;
-        width:auto;
-
-    }
-
-    .laptop {
-        order: 2;
-    }
-    /*
-    .myprojects{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: auto;
-        height: auto;
-    }   
-    .myproj_heading h1{
-        flex: 1;
-        order: 1;
-        width: auto;
-    }
-    .guessgame_pic{
-          flex: 1;
-          order: 2;
-          width: auto;
-    }
-    .gametext{
-          flex: 1;
-          order: 3;
-          width: auto;
-    }
-    .gametextbtn{
-          flex: 1;
-          order: 4;
-          width: auto;
-    }
-    .myprojects .links{
-         flex: 1;
-         order: 5;
-         width: auto;
-    }*/
 }
 
 /* For screen widths smaller than 768px */
 @media (max-width: 767px) {
+
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
+    .text p {
+        flex: 1;
+        order: 1;
+        width: auto;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .aboutme .laptop {
+        flex: 1;
+        order: 2;
+        width: auto;
+    }
+
    
     .myskills_heading h1, .greeting h1, 
     .text h1, .contact_heading h1{
@@ -737,7 +659,32 @@ footer{
         margin: 5px;
     }
 }
+
+/* For screen widths smaller than 577px */
 @media (max-width: 576px){
+
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
+    .aboutme .text p {
+        flex: 1;
+        order: 1;
+        width: auto;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .aboutme .laptop {
+        flex: 1;
+        order: 2;
+        width: auto;
+    }
+
     .myskills_heading h1, .greeting h1, 
     .text h1, .contact_heading h1{
         font-size: 30px;
@@ -812,35 +759,3 @@ footer{
     }
 
 }
-/*@media screen and (min-width: 768px) {
-    .bio {
-      display: flex;
-      flex-direction: row;
-    }
-  
-    .slideshow {
-      flex: 1;
-      order: 1;
-    }
-  
-    .greeting {
-      flex: 1;
-      order: 2;
-    }
-  }*/
-  
-  /* For screens smaller than 768px */
-  /*@media screen and (max-width: 767px) {
-    .bio {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .slideshow {
-      order: 2;
-    }
-  
-    .greeting {
-      order: 1;
-    }
-  }*/
